@@ -1,5 +1,7 @@
 class Recipe {
-    constructor(title, ingredients, prep_time, cook_time, directions, likes, comments){
+
+    constructor(id, title, ingredients, prep_time, cook_time, directions, likes, comments){
+        this.id = id
         this.title = title
         this.ingredients = ingredients 
         this.prep_time = prep_time
