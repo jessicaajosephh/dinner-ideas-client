@@ -10,4 +10,9 @@ class Recipe {
         this.likes = likes
         this.comments = [...comments]
     }
+
+    static fetchRecipes(){
+        
+    }
+
 }
