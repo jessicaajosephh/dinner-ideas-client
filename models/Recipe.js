@@ -17,4 +17,10 @@ class Recipe {
         .then(json => Recipe.renderRecipes(json))
     }
 
+    static renderRecipes(recipeInfo){
+        recipeInfo.forEach(recipe => {
+            
+        })
+    }
+
 }
