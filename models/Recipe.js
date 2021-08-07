@@ -8,6 +8,6 @@ class Recipe {
         this.cook_time = cook_time 
         this.directions = directions 
         this.likes = likes
-        this.comment = [...comments]
+        this.comments = [...comments]
     }
 }
