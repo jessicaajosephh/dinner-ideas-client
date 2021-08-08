@@ -26,6 +26,8 @@ class Recipe {
             let h4 = document.createElement("h4")
             let p = document.createElement("p")
             let likeButton = document.createElement("button")
+            let ul = document.createElement("ul")
+
             let recipeComments = recipe.comments.map(comment => {
                 let li = document.createElement("div")
                 let div = document.createElement("div")
