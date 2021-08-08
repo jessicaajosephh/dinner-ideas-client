@@ -6,7 +6,7 @@
 let recipesContainer = document.getElementById("recipes-container")
 
 const startProgram = () => {
-
+    Recipe.fetchRecipes()
 }
 
 document.addEventListener("DOMContentLoaded", startProgram)
