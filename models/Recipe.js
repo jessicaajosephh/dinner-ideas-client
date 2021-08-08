@@ -53,6 +53,17 @@ class Recipe {
             likeButton.innerText = "♥"
             likeButton.addEventListener("click", likeRecipe.bind(recipe))
 
+            div.appendChild(h2)
+            div.appendChild(p)
+            div.appendChild(h4)
+            div.appendChild(h4)
+            div.appendChild(p)
+            div.appendChild(likeButton)
+            recipeComments.forEach(li => ul.appendChild(li))
+            div.appendChild(ul)
+
+            recipesContainer().appendChild(div)
+
         })
     }
 
