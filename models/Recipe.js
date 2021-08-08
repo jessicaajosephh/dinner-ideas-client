@@ -26,6 +26,21 @@ class Recipe {
             let h4 = document.createElement("h4")
             let p = document.createElement("p")
             let likeButton = document.createElement("button")
+            let recipeComments = recipe.comments.map(comment => {
+                let li = document.createElement("div")
+                let div = document.createElement("div")
+                let commentContent = document.createElement("p")
+                let commentLikes = document.createElement("p")
+                let likeButton = document.createElement("button")
+                commentContent.innerText = comment.content 
+                commentLikes.innerText = comment.likes
+                likeButton.innerText = "♥"
+                div.appendChild(commentContent)
+                div.appendChild(commentLikes)
+                div.appendChild(likeButton)
+                li.appendChild(div)
+                return li 
+            })
 
             div.id = recipe.id 
             h2.innerText = recipe.title 
@@ -34,6 +49,8 @@ class Recipe {
             h4.innerText = recipe.cook_time 
             p.innerText = recipe.directions
             likeButton.innerText = "♥"
+            likeButton.addEventListener("click", likeRecipe.bind(recipe))
+
         })
     }
 
