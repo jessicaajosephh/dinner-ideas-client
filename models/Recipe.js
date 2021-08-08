@@ -53,7 +53,7 @@ class Recipe {
             h4.innerText = recipe.cook_time 
             p.innerText = recipe.directions
             likeButton.innerText = "♥"
-            likeButton.addEventListener("click", likeRecipe.bind(recipe))
+            likeButton.addEventListener("click", Recipe.likeRecipe.bind(recipe))
 
             div.appendChild(h2)
             div.appendChild(p)
