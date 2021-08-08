@@ -3,7 +3,7 @@
 // let cook_timeInput = () => document.getElementById("cook_time")
 // let prep_timeInput = () => document.getElementById("prep_time")
 // let directionsInput = () => document.getElementById("directions")
-let recipesContainer = document.getElementById("recipes-container")
+let recipesContainer = () => document.getElementById("recipes-container")
 
 const startProgram = () => {
     Recipe.fetchRecipes()
