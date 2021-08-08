@@ -69,4 +69,8 @@ class Recipe {
         })
     }
 
+    static likeRecipe(){
+        
+    }
+
 }
