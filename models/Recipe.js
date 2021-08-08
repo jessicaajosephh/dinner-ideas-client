@@ -14,7 +14,9 @@ class Recipe {
     static fetchRecipes(){
         fetch("http://localhost:3000/recipes")
         .then(resp => resp.json())
-        .then(json => Recipe.renderRecipes(json))
+        .then(json => {
+            Recipe.renderRecipes(json)
+        })
     }
 
     static renderRecipes(recipeInfo){
