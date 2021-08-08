@@ -69,8 +69,8 @@ class Recipe {
         })
     }
 
-    static likeRecipe(){
-        
+    static likeRecipe(e){
+
     }
 
 }
